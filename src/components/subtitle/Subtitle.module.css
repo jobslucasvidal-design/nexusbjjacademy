@@ -1,0 +1,71 @@
+/* WRAPPER */
+.wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* SUBTITLE */
+.subtitle {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+
+  font-size: clamp(28px, 4vw, 56px);
+  line-height: 0.95;
+
+  color: #ffffff;
+  letter-spacing: 1px;
+  
+}
+
+.subtitle span {
+  color: inherit;
+}
+
+/* 🔥 FAIXA (MENOR) */
+.beltBar {
+  width: 100%;
+  height: 20px;
+
+  background: #000;
+  position: relative;
+  border: 1px solid rgba(255,255,255,0.20);
+
+}
+
+.beltBar::before,
+.beltBar::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background: #fff;
+}
+
+.beltBar::before {
+  left: 75%;
+}
+
+.beltBar::after {
+  left: 90%;
+}
+
+.red {
+  position: absolute;
+  left: 78%;
+  width: 10%;
+  height: 100%;
+  background: #c1121f;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .wrapper {
+    align-items: center;
+  }
+
+  .subtitle {
+    text-align: center;
+  }
+}

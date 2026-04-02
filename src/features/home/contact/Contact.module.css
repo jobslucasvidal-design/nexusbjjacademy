@@ -1,0 +1,135 @@
+.contact {
+  padding: 160px 24px;
+  background: #0b0b0b;
+  color: #ffffff;
+}
+
+/* GRID */
+.grid {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+}
+
+/* COLUNAS */
+.left {
+  position: sticky;
+  top: 120px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 520px;
+}
+
+/* TEXTO */
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ACTIONS */
+.actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* BOTÕES MAIS PREMIUM */
+.actionButton {
+  background: #ffffff;
+  color: #000000;
+
+  padding: 14px 22px;
+
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.actionButton:hover {
+  background: #fbbf24;
+  transform: translateY(-2px);
+}
+
+/* MAPA */
+.mapWrapper {
+  grid-column: 1 / -1;
+  margin-top: 80px;
+}
+
+.map {
+  width: 100%;
+  height: 400px;
+
+  object-fit: cover;
+
+  filter: grayscale(100%);
+  opacity: 0.8;
+
+  transition: all 0.4s ease;
+}
+
+/* 🔥 HOVER AWWARDS */
+.map:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .grid {
+    gap: 60px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .contact {
+    padding: 100px 20px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .left {
+    position: static;
+    text-align: center;
+  }
+
+  .right {
+    align-items: center;
+    text-align: center;
+  }
+
+  .mapWrapper {
+    margin-top: 40px;
+  }
+
+  .map {
+    height: 300px;
+  }
+}
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+  .contact {
+    padding: 80px 16px;
+  }
+}

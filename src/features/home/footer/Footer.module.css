@@ -1,0 +1,151 @@
+.footer {
+  background: #0b0b0b;
+  color: #ffffff;
+
+  padding: 120px 24px 60px;
+}
+
+/* TOPO */
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* BRAND */
+.brand {
+  max-width: 200px;
+}
+
+/* GRID */
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+
+.infoGrid h4 {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 16px;
+}
+
+.infoGrid p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.8);
+}
+
+/* REDES */
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.socials a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+
+  transition: all 0.3s ease;
+}
+
+.socials a:hover {
+  color: #fbbf24;
+  transform: translateX(4px);
+}
+
+/* NAV */
+.nav {
+  margin: 80px 0 40px;
+}
+
+.navList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+}
+
+.navLink {
+  text-decoration: none;
+  color: rgba(255,255,255,0.7);
+
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #ffffff;
+}
+
+/* BOTTOM */
+.bottom {
+  margin-top: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.legal {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  font-size: 12px;
+  color: rgba(255,255,255,0.5);
+}
+
+.legal a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .infoGrid {
+    gap: 40px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .footer {
+    padding: 80px 20px 40px;
+  }
+
+  .infoGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+  .footer {
+    padding: 60px 16px 30px;
+  }
+}

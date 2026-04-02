@@ -1,0 +1,28 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+
+  background: rgba(5, 5, 5, 0.4);
+  backdrop-filter: blur(4px);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 100;
+}
+
+.header img {
+  height: 60px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 16px;
+    background: var(--bg);
+    backdrop-filter: none;
+  }
+}

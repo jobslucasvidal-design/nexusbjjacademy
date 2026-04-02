@@ -1,0 +1,27 @@
+:root {
+  --bg: #0b0b0b;
+  --text: #ffffff;
+  --text-muted: rgba(255, 255, 255, 0.7);
+
+  --primary: #fbbf24;
+
+  --font-main: 'Inter', sans-serif;
+
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 48px;
+  --spacing-xl: 80px;
+}
+
+/* 🔥 ANIMAÇÃO GLOBAL (ÚNICA) */
+.fade-up {
+  opacity: 1;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}

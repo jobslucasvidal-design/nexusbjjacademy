@@ -1,0 +1,119 @@
+.about {
+  padding: 160px 24px;
+  background: #0b0b0b;
+  color: #ffffff;
+}
+
+/* GRID PRINCIPAL */
+.grid {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 80px;
+
+  align-items: start;
+}
+
+/* COLUNAS */
+.left {
+  position: sticky;
+  top: 120px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 600px;
+}
+
+/* CTA */
+.ctaWrapper {
+  margin-top: 16px;
+}
+
+/* PARTNERS */
+.partners {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.partnersTitle {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+
+  margin-bottom: 40px;
+}
+
+.partnersList {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 80px;
+  padding: 0;
+}
+
+/* LOGOS MAIS PREMIUM */
+.partnerLogo {
+  height: 120px;
+
+  filter: grayscale(100%);
+  opacity: 0.6;
+
+  cursor: pointer;
+  
+  transition: all 0.3s ease;
+}
+
+.partnerLogo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .grid {
+    gap: 60px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about {
+    padding: 100px 20px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .left {
+    position: static;
+    text-align: center;
+  }
+
+  .right {
+    align-items: center;
+    text-align: center;
+  }
+
+  .partnersList {
+    gap: 40px;
+  }
+}
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+  .about {
+    padding: 80px 16px;
+  }
+}
