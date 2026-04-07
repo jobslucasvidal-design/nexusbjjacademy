@@ -1,23 +1,43 @@
-import styles from "../Contact.module.css"
+import styles from "../Contact.module.css";
 
 export default function ContactActions() {
   const contactActions = [
-    { id: 1, label: "central de ajuda", href: "#" },
-    { id: 2, label: "mandar email", href: "#" },
-    { id: 3, label: "colaborações", href: "#" }
+    {
+      id: 1,
+      label: "Central de ajuda",
+      desc: "Tire suas dúvidas",
+      href: "#",
+    },
+    {
+      id: 2,
+      label: "Mandar email",
+      desc: "Fale com a equipe",
+      href: "#",
+    },
+    {
+      id: 3,
+      label: "Colaborações",
+      desc: "Parcerias e projetos",
+      href: "#",
+    },
   ];
 
   return (
-    <nav className={styles.actions}>
+    <div className={styles.actionsWrapper}>
       {contactActions.map((action) => (
         <a
           key={action.id}
           href={action.href}
-          className={styles.action}
+          className={styles.actionCard}
         >
-          {action.label}
+          <div>
+            <h4>{action.label}</h4>
+            <p>{action.desc}</p>
+          </div>
+
+          <span className={styles.arrow}>→</span>
         </a>
       ))}
-    </nav>
+    </div>
   );
 }

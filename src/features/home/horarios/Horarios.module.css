@@ -1,0 +1,115 @@
+.sectionHorarios {
+  background: #0b0b0b;
+  padding: 140px 24px;
+}
+
+/* HEADER */
+.headerHorarios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+
+
+.headerHorarios p {
+  color: rgba(255,255,255,0.6);
+}
+
+/* 🔥 DIAS */
+.days {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.days button {
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: #111;
+  color: #fff;
+  border: 1px solid #222;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.days button:hover {
+  background: #1a1a1a;
+}
+
+/* 🔥 ATIVO PREMIUM */
+.active {
+  background: linear-gradient(135deg, #ff0000, #b30000);
+  border-color: #ff0000;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+/* CARD */
+.card {
+  padding: 32px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #111, #0a0a0a);
+  border: 1px solid #222;
+  transition: all 0.4s ease;
+}
+
+/* HOVER */
+.card:hover {
+  transform: translateY(-8px);
+  border-color: #ff0000;
+  box-shadow: 0 20px 60px rgba(255,0,0,0.2);
+}
+
+/* TITULO */
+.card h3 {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+/* DIAS */
+.daysLabel {
+  font-size: 14px;
+  color: #ff0000;
+  margin-bottom: 16px;
+}
+
+/* HORARIOS */
+.times {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.times span {
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #1a1a1a;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* CTA */
+.cta {
+  color: #ff0000;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

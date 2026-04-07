@@ -1,135 +1,166 @@
 .contact {
-  padding: 160px 24px;
   background: #0b0b0b;
-  color: #ffffff;
+  padding: 140px 24px;
 }
 
-/* GRID */
-.grid {
-  max-width: 1200px;
-  margin: 0 auto;
+/* HEADER */
+.headerContact {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
 
+/* 🔥 ACTIONS */
+.actionsWrapper {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 80px;
-}
-
-/* COLUNAS */
-.left {
-  position: sticky;
-  top: 120px;
-}
-
-.right {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  max-width: 520px;
-}
-
-/* TEXTO */
-.textBlock {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-/* ACTIONS */
-.actions {
-  display: flex;
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
-  flex-wrap: wrap;
-  margin-top: 16px;
-  font-size: 12px;
-  text-transform: uppercase;
+  margin-bottom: 60px;
 }
 
-/* BOTÕES MAIS PREMIUM */
-.actionButton {
-  background: #ffffff;
-  color: #000000;
+.actionCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-  padding: 14px 22px;
+  padding: 18px 20px;
+  border-radius: 14px;
 
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 1px;
+  background: #111;
+  border: 1px solid #222;
 
-  text-transform: uppercase;
   text-decoration: none;
+  color: #fff;
 
   transition: all 0.3s ease;
 }
 
-.actionButton:hover {
-  background: #fbbf24;
-  transform: translateY(-2px);
+.actionCard h4 {
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
-/* MAPA */
-.mapWrapper {
-  grid-column: 1 / -1;
-  margin-top: 80px;
+.actionCard p {
+  font-size: 12px;
+  color: rgba(255,255,255,0.5);
 }
 
-.map {
-  width: 100%;
-  height: 400px;
+.arrow {
+  color: #ff0000;
+  transition: transform 0.3s ease;
+}
 
-  object-fit: cover;
+.actionCard:hover {
+  border-color: #ff0000;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(255,0,0,0.2);
+}
 
-  filter: grayscale(100%);
-  opacity: 0.8;
+.actionCard:hover .arrow {
+  transform: translateX(6px);
+}
 
+/* 🔥 GRID CARDS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.card {
+  padding: 32px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #111, #0a0a0a);
+  border: 1px solid #222;
+  text-align: center;
   transition: all 0.4s ease;
 }
 
-/* 🔥 HOVER AWWARDS */
-.map:hover {
-  filter: grayscale(0%);
-  opacity: 1;
+.card:hover {
+  transform: translateY(-8px);
+  border-color: #ff0000;
+  box-shadow: 0 20px 60px rgba(255,0,0,0.2);
 }
 
-/* Tablet */
-@media (max-width: 1024px) {
-  .grid {
-    gap: 60px;
-  }
+.icon {
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #ff0000;
 }
 
-/* Mobile */
+/* 🔥 CTA */
+.ctaBox {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.ctaBox h3 {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.actionsMain {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.primary {
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #ff0000, #b30000);
+  color: #fff;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 40px rgba(255,0,0,0.4);
+}
+
+.secondary {
+  padding: 14px 28px;
+  border: 1px solid #333;
+  border-radius: 999px;
+  color: #fff;
+}
+
+/* 🔥 MAPA */
+.map {
+  height: 400px;
+  border-radius: 20px;
+  background: #222;
+  position: relative;
+  overflow: hidden;
+}
+
+.mapOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.8),
+    transparent
+  );
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
-  .contact {
-    padding: 100px 20px;
+  .actionsWrapper {
+    grid-template-columns: 1fr;
   }
 
   .grid {
     grid-template-columns: 1fr;
-    gap: 40px;
   }
 
-  .left {
-    position: static;
-    text-align: center;
-  }
-
-  .right {
+  .actionsMain {
+    flex-direction: column;
     align-items: center;
-    text-align: center;
-  }
-
-  .mapWrapper {
-    margin-top: 40px;
-  }
-
-  .map {
-    height: 300px;
-  }
-}
-
-/* Mobile pequeno */
-@media (max-width: 480px) {
-  .contact {
-    padding: 80px 16px;
   }
 }

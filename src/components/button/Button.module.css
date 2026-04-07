@@ -1,25 +1,21 @@
 .button {
   display: inline-block;
-
-  background: #ffffff;
-  color: #000000;
+  width: max-content;
+  text-transform: capitalize;
 
   padding: 14px 28px;
+  border-radius: 999px;
 
-  font-size: 12px;
+  background: #e11d48;
+  color: white;
+  text-decoration: none;
+
   font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
 
-  border: 1px solid transparent;
-
-  transition: all 0.3s ease;
-  width: max-content;
+  transition: all .3s ease;
 }
 
-/* 🔥 HOVER FINAL */
 .button:hover {
-  background: transparent;
-  color: #ffffff;
-  border: 1px solid #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(225,29,72,.4);
 }

@@ -8,7 +8,7 @@ export default function Hero() {
   const [ref, isVisible] = useInView();
 
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} id='inicio'>
       <div
         ref={ref}
         className={`container ${styles.heroSection} fade-up ${
@@ -20,7 +20,7 @@ export default function Hero() {
         />
 
         <Paragraph
-          text="Venha treinar conosco no coração de Berlim. Uma ótima comunidade com instrutores experientes espera por você. Juntos, vamos extrair o melhor de você."
+          text="Venha treinar conosco no coração de São Roque. Uma ótima comunidade com instrutores experientes espera por você. Juntos, vamos extrair o melhor de você."
         />
 
         <Button url="#" text="venha treinar conosco" />

@@ -1,53 +1,72 @@
 .about {
-  padding: 160px 24px;
-  background: #0b0b0b;
-  color: #ffffff;
+  padding: 200px 24px;
+
+  background:
+  radial-gradient(
+    circle at top,
+    rgba(225,29,72,0.06),
+    #0b0b0b 40%
+  );
+
+  color: white;
 }
 
-/* GRID PRINCIPAL */
-.grid {
-  max-width: 1200px;
+/* HEADER */
+
+.headerAbout {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+/* TEXTO */
+
+.contentAbout {
+  max-width: 620px;
   margin: 0 auto;
 
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 80px;
-
-  align-items: start;
-}
-
-/* COLUNAS */
-.left {
-  position: sticky;
-  top: 120px;
-}
-
-.right {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  max-width: 600px;
+  align-items: center;
+  gap: 28px;
+
+  text-align: center;
+}
+
+.contentAbout p {
+  line-height: 1.75;
+  color: rgba(255,255,255,.75);
 }
 
 /* CTA */
+
 .ctaWrapper {
-  margin-top: 16px;
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
 }
 
 /* PARTNERS */
+
 .partners {
-  margin-top: 120px;
+  margin-top: 140px;
+  padding-top: 60px;
+
+  border-top: 1px solid rgba(255,255,255,.08);
+
   text-align: center;
 }
 
 .partnersTitle {
   font-size: 12px;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.5);
 
-  margin-bottom: 40px;
+  color: rgba(255,255,255,.5);
+
+  margin-bottom: 50px;
 }
+
+/* LISTA */
 
 .partnersList {
   list-style: none;
@@ -56,64 +75,48 @@
   justify-content: center;
   align-items: center;
 
-  gap: 80px;
+  gap: 100px;
   padding: 0;
 }
 
-/* LOGOS MAIS PREMIUM */
+/* LOGOS */
+
 .partnerLogo {
-  height: 120px;
+  max-height: 80px;
 
   filter: grayscale(100%);
-  opacity: 0.6;
+  opacity: .55;
 
-  cursor: pointer;
-  
-  transition: all 0.3s ease;
+  transition:
+  transform .35s ease,
+  opacity .35s ease,
+  filter .35s ease;
 }
 
-.partnerLogo:hover {
+.partner:hover .partnerLogo {
+  transform: translateY(-6px) scale(1.05);
   filter: grayscale(0%);
   opacity: 1;
-  transform: scale(1.05);
 }
 
-/* Tablet */
-@media (max-width: 1024px) {
-  .grid {
-    gap: 60px;
-  }
+/* RESPONSIVO */
+
+@media (max-width:768px){
+
+.about{
+  padding:140px 20px;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .about {
-    padding: 100px 20px;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .left {
-    position: static;
-    text-align: center;
-  }
-
-  .right {
-    align-items: center;
-    text-align: center;
-  }
-
-  .partnersList {
-    gap: 40px;
-  }
+.partnersList{
+  gap:40px;
 }
 
-/* Mobile pequeno */
-@media (max-width: 480px) {
-  .about {
-    padding: 80px 16px;
-  }
+}
+
+@media (max-width:480px){
+
+.about{
+  padding:120px 16px;
+}
+
 }

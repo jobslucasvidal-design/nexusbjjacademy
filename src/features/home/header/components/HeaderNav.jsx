@@ -2,9 +2,10 @@ import styles from './HeaderNav.module.css';
 
 export default function HeaderNav({ isMobile = false, onClickLink }) {
   const links = [
-    { label: "home", href: "#home" },
-    { label: "sobre mim", href: "#sobre" },
-    { label: "projetos", href: "#projetos" },
+    { label: "início", href: "#inicio" },
+    { label: "aulas", href: "#aulas" },
+    { label: "horários", href: "#horarios" },
+    { label: "sobre nós", href: "#sobrenos" },
     { label: "contato", href: "#contato" }
   ];
 

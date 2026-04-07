@@ -1,0 +1,12 @@
+.sectionHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  gap: 16px;
+
+  margin-bottom: 40px;
+}
+.sectionHeader p {
+  color: rgba(255,255,255,0.6);
+}

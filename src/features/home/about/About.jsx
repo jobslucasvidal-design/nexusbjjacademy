@@ -1,29 +1,36 @@
-import styles from './About.module.css';
-import Partners from './data/Partners';
-import Subtitle from '../../../components/subtitle/Subtitle.jsx';
-import Paragraph from '../../../components/paragraph/Paragraph.jsx';
-import Button from '../../../components/button/Button.jsx';
+import styles from "./About.module.css";
+import Partners from "./data/Partners.jsx";
+import Subtitle from "../../../components/subtitle/Subtitle.jsx";
+import Paragraph from "../../../components/paragraph/Paragraph.jsx";
+import Button from "../../../components/button/Button.jsx";
 
 export default function About() {
   return (
-    <section className={styles.about} aria-labelledby="about-title">
-      
+    <section
+      className={styles.about}
+      id="sobrenos"
+      aria-labelledby="about-title"
+    >
       <div className="container">
 
-        <div className={styles.grid}>
-
-          <div className={`${styles.left} fade-up`}>
+        <header className={`${styles.headerAbout} fade-up`}>
+          <h2 id="about-title">
             <Subtitle line="sobre nós" />
-          </div>
+          </h2>
+        </header>
 
-          <div className={`${styles.right} fade-up delay-1`}>
-            <Paragraph text="Fundada em 2010, nossa academia está localizada na Moritzplatz desde então. Inicialmente, começamos como uma academia focada exclusivamente em MMA, mas com o tempo nos tornamos um centro para diversas artes marciais, com ênfase em MMA, BJJ e Muay Thai." />
+        <div className={`${styles.contentAbout} fade-up delay-1`}>
 
-            <Paragraph text="Sete dias por semana, nossa equipe e comunidade oferecem uma enorme variedade de atividades em mais de 140 aulas. Nossa área de fitness e grandes tatames também oferecem oportunidades para treinamento individual de força e técnica ou sessões de sparring com amigos." />
+          <Paragraph
+            text="Em São Roque - SP, somos uma academia especializada em Jiu Jitsu, construída para quem busca um ambiente sério, técnico e comprometido com a prática no tatame."
+          />
 
-            <div className={styles.ctaWrapper}>
-              <Button url="#" text="saiba mais" />
-            </div>
+          <Paragraph
+            text="Oferecemos treinos ao longo de toda a semana, com foco total em técnica, evolução e prática constante no Jiu Jitsu. Nosso espaço conta com amplos tatames ideais para treinos, drills e sessões de sparring."
+          />
+
+          <div className={styles.ctaWrapper}>
+            <Button url="#" text="saiba mais" />
           </div>
 
         </div>

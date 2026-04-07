@@ -1,45 +1,62 @@
-import styles from './Contact.module.css';
-import imgMapa from '../../../assets/images/mapa.png';
-import ContactActions from '../contact/data/ContactActions.jsx';
+import styles from "./Contact.module.css";
+import ContactActions from "./data/ContactActions.jsx";
+import SectionHeader from "../../../components/sectionHeader/sectionHeader.jsx";
 
-import Subtitle from '../../../components/subtitle/Subtitle.jsx';
-import Paragraph from '../../../components/paragraph/Paragraph.jsx';
+import Button from '../../../components/button/Button.jsx';
+
 
 export default function Contact() {
   return (
-    <section className={styles.contact} aria-labelledby="contact-title">
-      
+    <section className={styles.contact} id="contato">
       <div className="container">
+        <SectionHeader
+          title="contato"
+          description="Venha nos visitar ou fale com nossa equipe."
+        />
+        {/* HEADER */}
 
+        {/* 🔥 ACTIONS (agora premium) */}
+        <ContactActions />
+
+        {/* 🔥 CARDS PRINCIPAIS */}
         <div className={styles.grid}>
-          
-          <div className={`${styles.left} fade-up`}>
-            <Subtitle line="faq & contato" id="contact-title" />
+
+          <div className={styles.card}>
+            <span className={styles.icon}>📍</span>
+            <h3>Endereço</h3>
+            <p>São Roque - SP</p>
           </div>
 
-          <div className={`${styles.right} fade-up delay-1`}>
-            
-            <div className={styles.textBlock}>
-              <Paragraph text="Tem alguma dúvida sobre a academia, as aulas ou o treino experimental?" />
-              <Paragraph text="Acesse nossa central de ajuda ou fale diretamente com a nossa equipe." />
-            </div>
-
-            <div className={styles.textBlock}>
-              <Paragraph text="Caso não encontre sua resposta, envie-nos um e-mail ou fale sobre parcerias e colaborações." />
-            </div>
-
-            <ContactActions />
-
+          <div className={styles.card}>
+            <span className={styles.icon}>📞</span>
+            <h3>Telefone</h3>
+            <p>(11) 98990-6816</p>
           </div>
 
-          <div className={`${styles.mapWrapper} fade-up delay-2`}>
-            <img
-              src={imgMapa}
-              alt="Mapa mostrando localização da academia"
-              className={styles.map}
-            />
-          </div>
+          <a href="#horarios" className={styles.card}>
+            <span className={styles.icon}>⏱</span>
+            <h3>Horários</h3>
+            <p>Confira os horários das aulas</p>
+          </a>
 
+        </div>
+
+        {/* 🔥 CTA PRINCIPAL */}
+        <div className={styles.ctaBox}>
+          <h3>Agende sua aula experimental</h3>
+
+          <div className={styles.actionsMain}>
+            <Button url="#" text="falar no whatsApp →" />
+
+            <a href="#" className={styles.secondary}>
+              Enviar email
+            </a>
+          </div>
+        </div>
+
+        {/* 🔥 MAPA */}
+        <div className={styles.map}>
+          <div className={styles.mapOverlay}></div>
         </div>
 
       </div>

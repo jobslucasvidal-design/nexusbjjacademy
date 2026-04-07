@@ -1,15 +1,15 @@
-import zion from "../../../../assets/icons/zion.svg"
-import feu from "../../../../assets/icons/feu.svg"
+import nexus from "../../../../assets/icons/nexus-logo.svg"
+import cbjje from "../../../../assets/icons/cbjje.svg"
 
 export const partners = [
   {
     id: 1,
-    name: "ZION",
-    logo: zion
+    name: "Nexus",
+    logo: nexus
   },
   {
     id: 2,
-    name: "FEU",
-    logo: feu
+    name: "CBJJE",
+    logo: cbjje
   }
 ]

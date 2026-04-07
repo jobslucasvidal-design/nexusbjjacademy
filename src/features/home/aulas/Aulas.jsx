@@ -1,55 +1,53 @@
-import styles from "./Aulas.module.css";
-import Subtitle from "../../../components/subtitle/Subtitle.jsx"
+import styles from './Aulas.module.css';
+import SectionHeader from '../../../components/sectionHeader/sectionHeader.jsx';
 
-import img1 from "../../../assets/images/women.png";
-import img2 from "../../../assets/images/adults.png";
-import img3 from "../../../assets/images/kids.png";
+import img1 from '../../../assets/images/women.png';
+import img2 from '../../../assets/images/adults.png';
+import img3 from '../../../assets/images/kids.png';
 
 const classes = [
   {
-    title: "BJJ MULHERES",
-    text: "Treine em um ambiente seguro, acolhedor e focado no desenvolvimento técnico. Fortaleça sua confiança, condicionamento físico e habilidades reais de defesa pessoal. Aqui, cada evolução é respeitada no seu tempo.",
-    image: img1,
-  },
-  {
-    title: "BJJ ADULTOS",
-    text: "Aulas para todos os níveis, do iniciante ao avançado, com foco em técnica e evolução constante. Desenvolva disciplina, resistência e controle em um ambiente desafiador. Treine com propósito e supere seus limites a cada sessão.",
+    title: 'BJJ ADULTOS',
+    text: 'Treinos para todos os níveis com foco em técnica e evolução constante.',
     image: img2,
+    featured: true,
   },
   {
-    title: "BJJ KIDS",
-    text: "Aulas dinâmicas que desenvolvem disciplina, respeito e coordenação motora. Um ambiente divertido e seguro para o crescimento físico e emocional das crianças. Aqui, elas aprendem muito além do esporte.",
+    title: 'BJJ KIDS',
+    text: 'Disciplina, coordenação e diversão para o desenvolvimento infantil.',
     image: img3,
+  },
+  {
+    title: 'BJJ MULHERES',
+    text: 'Ambiente acolhedor com foco em confiança e defesa pessoal.',
+    image: img1,
   },
 ];
 
 export default function Aulas() {
   return (
-    <section className={styles.section}>
+    <section className={styles.sectionAulas} id="aulas">
       <div className="container">
-        
-        <div className={`${styles.header} fade-up`}>
-          <Subtitle line="nossas aulas" id="aulas-title" />
-        </div>
+        <SectionHeader
+          title="nossas aulas"
+          description="Escolha o programa ideal para você"
+        />
 
         <div className={styles.grid}>
           {classes.map((item, index) => (
-            <div
-              key={item.title}
-              className={`${styles.card} fade-up delay-${index}`}
-            >
+            <div key={index} className={`${styles.card}`}>
               <img src={item.image} alt={item.title} />
 
-              <div className={styles.overlay} />
+              <div className={styles.overlay}></div>
 
-              <div className={styles.content}>
+              <div className={styles.contentAulas}>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
+                <span className={styles.cta}>Saiba mais →</span>
               </div>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
