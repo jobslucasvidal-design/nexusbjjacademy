@@ -65,4 +65,7 @@
 <h3>Clonando o projeto</h3>
 
 ```bash
-git clone https://github.com/jobslucasvidal-design/nexusbjjacademy.git
+git clone https://github.com/lucasvidaldev/nexusbjjacademy.git
+cd nexusbjjacademy
+npm install
+npm run dev
