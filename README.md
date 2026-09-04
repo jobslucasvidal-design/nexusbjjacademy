@@ -1,16 +1,68 @@
-# React + Vite
+<h1 align="center">Nexus - BJJ ACADEMY </h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img src="https://img.shields.io/badge/status-online-green" />
+  <img src="https://img.shields.io/badge/react-18-blue" />
+  <img src="https://img.shields.io/badge/responsive-yes-purple" />
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+ <a href="#layout">Layout</a> • 
+ <a href="#technologies">Tecnologias</a> • 
+ <a href="#features">Features</a> •
+ <a href="#started">Getting Started</a>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<p align="center">
+  <b>
+    Landing page desenvolvida para uma academia de Jiu-Jitsu, com foco em conversão e apresentação profissional da marca. O projeto utiliza design moderno, layout responsivo e boas práticas de UX para destacar serviços, atrair novos alunos e fortalecer a presença digital da academia.
+  </b>
+</p>
 
-## React Compiler
+<p align="center">
+  <a href="https://nexusbjjacademy.netlify.app/">📱 Acessar Projeto</a>
+</p>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+<h2 id="layout">🎨 Layout</h2>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<p align="center">
+  <img src="public/.github/imagens/preview-1.jpeg" width="400px" />
+  <img src="public/.github/imagens/preview-2.jpeg" width="400px" />
+</p>
+
+---
+
+<h2 id="technologies">💻 Tecnologias</h2>
+
+- React  
+- JavaScript (ES6+)  
+- HTML5 (Semântico)  
+- CSS Modules  
+- Responsive Design  
+- UX/UI Design   
+
+---
+
+<h2 id="features">✨ Features</h2>
+
+- Interface moderna e minimalista  
+- Design totalmente responsivo  
+- Estrutura com HTML semântico  
+- Componentização com React  
+- Foco em performance e experiência do usuário  
+
+---
+
+<h2 id="started">🚀 Getting Started</h2>
+
+<h3>Pré-requisitos</h3>
+
+- Node.js  
+- npm ou yarn  
+
+<h3>Clonando o projeto</h3>
+
+```bash
+git clone https://github.com/jobslucasvidal-design/nexusbjjacademy.git
