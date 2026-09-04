@@ -1,3 +1,4 @@
+/* Reset Global */
 *,
 *::before,
 *::after {
@@ -17,7 +18,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ELEMENTOS */
+/* Elementos */
 ul {
   list-style: none;
 }
@@ -34,14 +35,14 @@ img {
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
-/* CONTAINER (CORRIGIDO) */
+/* Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
 }
 
-/* RESPONSIVO */
+/* Responsividade */
 @media (max-width: 768px) {
   .container {
     padding: 0 20px;

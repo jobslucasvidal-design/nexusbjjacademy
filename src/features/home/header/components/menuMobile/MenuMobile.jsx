@@ -1,4 +1,6 @@
+// Import do Hook useState
 import { useState } from 'react';
+// Import do HeaderNav e CSS MenuMobile
 import HeaderNav from '../HeaderNav';
 import styles from './MenuMobile.module.css';
 

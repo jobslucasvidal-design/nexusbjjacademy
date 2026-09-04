@@ -12,13 +12,11 @@ export default function Partners() {
       <ul className={styles.partnersList}>
         {partners.map((partner) => (
           <li key={partner.id} className={styles.partner}>
-
             <img
               src={partner.logo}
               alt={`Logo ${partner.name}`}
               className={styles.partnerLogo}
             />
-
           </li>
         ))}
       </ul>

@@ -1,3 +1,4 @@
+// Import CSS Subtitle
 import styles from './Subtitle.module.css';
 
 export default function Subtitle({ line, highlight }) {

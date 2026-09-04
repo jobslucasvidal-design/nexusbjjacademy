@@ -1,3 +1,5 @@
+// Import do React
+
 import React from 'react';
 
 export function useMedia(media) {
@@ -16,4 +18,4 @@ export function useMedia(media) {
   }, [media]);
 
   return match;
-};
+}

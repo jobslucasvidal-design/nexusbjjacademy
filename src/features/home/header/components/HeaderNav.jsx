@@ -1,3 +1,4 @@
+// Import do CSS do HeaderNav
 import styles from './HeaderNav.module.css';
 
 export default function HeaderNav({ isMobile = false, onClickLink }) {
@@ -8,7 +9,6 @@ export default function HeaderNav({ isMobile = false, onClickLink }) {
     { label: "sobre nós", href: "#sobrenos" },
     { label: "contato", href: "#contato" }
   ];
-
   return (
     <ul className={`${styles.navMenu} ${isMobile && styles.mobile}`}>
       {links.map((item) => (

@@ -1,3 +1,4 @@
+// Import CSS Footer
 import styles from "./Footer.module.css"
 
 export default function FooterNav() {

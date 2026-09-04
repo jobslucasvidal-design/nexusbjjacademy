@@ -28,8 +28,7 @@
   color: rgba(255,255,255,.4);
 }
 
-/* GRID */
-
+/* Grid */
 .grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
@@ -79,20 +78,14 @@
   gap: 10px;
 }
 
-/* RESPONSIVO */
-
+/* Responsividade */
 @media (max-width: 900px){
-
-.grid{
-  grid-template-columns: 1fr 1fr;
+  .grid{
+    grid-template-columns: 1fr 1fr;
+  }
 }
-
-}
-
 @media (max-width: 600px){
-
-.grid{
-  grid-template-columns: 1fr;
-}
-
+  .grid{
+    grid-template-columns: 1fr;
+  }
 }

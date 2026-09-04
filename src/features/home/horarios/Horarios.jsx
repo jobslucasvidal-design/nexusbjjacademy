@@ -1,8 +1,7 @@
 import styles from './Horarios.module.css';
 import { useState } from 'react';
+// Import do Component Global
 import SectionHeader from '../../../components/sectionHeader/sectionHeader.jsx';
-
-
 const schedule = {
   group1: [
     {
@@ -51,7 +50,7 @@ export default function Horarios() {
           title="horários de aula"
           description="Escolha o melhor dia para treinar"
         />
-        {/* 🔥 Dias */}
+        {/* Dias */}
         <div className={styles.days}>
           {['seg', 'ter', 'qua', 'qui', 'sex'].map((d) => (
             <button
@@ -64,7 +63,7 @@ export default function Horarios() {
           ))}
         </div>
 
-        {/* 🔥 Cards */}
+        {/* Cards */}
         <div className={styles.grid}>
           {currentData.map((item, i) => (
             <div key={i} className={styles.card}>
@@ -77,7 +76,6 @@ export default function Horarios() {
                   <span key={index}>{t}</span>
                 ))}
               </div>
-
               <span className={styles.cta}>Agendar aula →</span>
             </div>
           ))}

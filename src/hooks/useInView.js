@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from "react";
-
+// Import dos Hooks useEffect, useRef, useState
+import { useEffect, useRef, useState } from 'react';
 
 export default function useInView() {
   const ref = useRef(null);
@@ -7,7 +7,6 @@ export default function useInView() {
 
   useEffect(() => {
     const element = ref.current;
-
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -16,7 +15,7 @@ export default function useInView() {
       },
       {
         threshold: 0.1,
-      }
+      },
     );
 
     if (element) observer.observe(element);

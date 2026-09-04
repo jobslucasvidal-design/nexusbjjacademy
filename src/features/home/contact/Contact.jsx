@@ -1,7 +1,8 @@
+// Import CSS e Contact Data
 import styles from './Contact.module.css';
 import ContactActions from './data/ContactActions.jsx';
+// Import Components Globais
 import SectionHeader from '../../../components/sectionHeader/sectionHeader.jsx';
-
 import Button from '../../../components/button/Button.jsx';
 
 export default function Contact() {
@@ -12,12 +13,10 @@ export default function Contact() {
           title="contato"
           description="Venha nos visitar ou fale com nossa equipe."
         />
-        {/* HEADER */}
-
-        {/* 🔥 ACTIONS (agora premium) */}
+        {/* Actions (agora premium) */}
         <ContactActions />
 
-        {/* 🔥 CARDS PRINCIPAIS */}
+        {/* Cards principais */}
         <div className={styles.grid}>
           <div className={styles.card}>
             <span className={styles.icon}>📍</span>
@@ -38,7 +37,7 @@ export default function Contact() {
           </a>
         </div>
 
-        {/* 🔥 CTA PRINCIPAL */}
+        {/* CTA principal */}
         <div className={styles.ctaBox}>
           <h3>Agende sua aula experimental</h3>
 
@@ -51,7 +50,7 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* 🔥 MAPA */}
+        {/* Mapa */}
         <div className={styles.map}>
           <iframe
             src="https://www.google.com/maps?q=São+Roque+SP&output=embed"

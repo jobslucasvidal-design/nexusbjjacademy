@@ -1,15 +1,16 @@
-import styles from './Hero.module.css';
+// Import de Components Globais
 import Title from '../../../components/title/Title.jsx';
 import Paragraph from '../../../components/paragraph/Paragraph.jsx';
 import Button from '../../../components/button/Button.jsx';
-
+// Import do CSS do Hero
+import styles from './Hero.module.css';
+// Import da Img Bg
 import bg from '../../../assets/images/bg-intro.jpg';
 
 export default function Hero() {
   return (
     <section className={styles.hero}>
-      
-      {/* 🔥 imagem otimizada (substitui background) */}
+      {/* Imagem otimizada (substitui background) */}
       <img
         src={bg}
         alt="Imagem de dois atles de jiu jitsu"
@@ -20,7 +21,7 @@ export default function Hero() {
       />
 
       <div className="container">
-        {/* 🔥 MANTÉM SEU FADE-UP */}
+        {/* Mantém fade-up */}
         <div className={`${styles.heroSection} fade-up`}>
           <Title
             line="brazilian jiu jitsu disciplina evolução."

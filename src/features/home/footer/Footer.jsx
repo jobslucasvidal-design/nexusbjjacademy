@@ -1,8 +1,10 @@
+// Import do CSS Footer
 import styles from './Footer.module.css';
+// Imports dos Components Globais
 import SectionHeader from '../../../components/sectionHeader/sectionHeader.jsx';
-
 import Paragraph from '../../../components/paragraph/Paragraph.jsx';
 import Button from '../../../components/button/Button.jsx';
+// Import do Logo
 import nexusLogo from '../../../assets/icons/nexus-logo.svg';
 
 export default function Footer() {
@@ -16,9 +18,7 @@ export default function Footer() {
             />
             <Button url="#" text="agendar aula" />
           </div>
-
-
-        {/* GRID */}
+        {/* Grid */}
         <div className={styles.grid}>
           <div className={styles.brand}>
             <img src={nexusLogo} alt="Nexus BJJ Academy" />
@@ -63,7 +63,6 @@ export default function Footer() {
 
           <div>
             <h4>Redes</h4>
-
             <div className={styles.socials}>
               <a href="#">Instagram</a>
               <a href="#">YouTube</a>
@@ -72,7 +71,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* COPYRIGHT */}
+        {/* Copyright */}
         <div className={styles.bottom}>
           <p>© 2026 Nexus BJJ Academy</p>
           <span>Desenvolvido por Lucas Vidal</span>

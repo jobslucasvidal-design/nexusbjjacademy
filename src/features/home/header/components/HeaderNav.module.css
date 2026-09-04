@@ -1,4 +1,4 @@
-/* DESKTOP */
+/* Desktop */
 .navMenu {
   display: flex;
   gap: 32px;
@@ -17,15 +17,14 @@
   opacity: 0.7;
 }
 
-/* MOBILE */
+/* Responsividade */
 @media (max-width: 768px) {
-
-  /* ESCONDE MENU NORMAL */
+  /* Esconde Menu Normal */
   .navMenu {
     display: none;
   }
 
-  /* VARIANTE MOBILE */
+  /* Menu Mobile Variação */
   .mobile {
     display: flex;
     flex-direction: column;

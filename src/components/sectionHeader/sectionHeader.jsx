@@ -1,4 +1,6 @@
+// Import do CSS sectionHeader
 import styles from "../sectionHeader/sectionHeader.module.css";
+// Import dos Components Globais
 import Subtitle from "../subtitle/Subtitle.jsx";
 import Paragraph from "../paragraph/Paragraph.jsx";
 

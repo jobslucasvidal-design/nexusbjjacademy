@@ -1,4 +1,6 @@
+// Import CSS Divider
 import styles from "./Divider.module.css";
+// Import Hook useInView
 import useInView from "../../hooks/useInView";
 
 export default function Divider({ image }) {
@@ -9,7 +11,7 @@ export default function Divider({ image }) {
       ref={ref}
       className={`${styles.divider} ${isVisible ? styles.show : ""}`}
     >
-      {/* 🔥 imagem real (melhora performance) */}
+      {/* Imagem */}
       <img
         src={image}
         alt=""
@@ -20,7 +22,6 @@ export default function Divider({ image }) {
       />
 
       <div className={styles.overlay}></div>
-
       <div className={styles.shapeTop}></div>
       <div className={styles.shapeMiddle}></div>
       <div className={styles.shapeBottom}></div>

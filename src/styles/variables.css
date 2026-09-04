@@ -14,7 +14,7 @@
   --spacing-xl: 80px;
 }
 
-/* 🔥 ANIMAÇÃO GLOBAL (ÚNICA) */
+/* Animação Global Fade Up */
 .fade-up {
   opacity: 1;
   transform: translateY(40px);

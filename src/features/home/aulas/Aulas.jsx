@@ -1,6 +1,8 @@
+// Imports do CSS Aulas
 import styles from './Aulas.module.css';
+// Import do Component Global
 import SectionHeader from '../../../components/sectionHeader/sectionHeader.jsx';
-
+// Imports das Imgs
 import img1 from '../../../assets/images/women.jpg';
 import img2 from '../../../assets/images/adults.jpg';
 import img3 from '../../../assets/images/kids.jpg';
